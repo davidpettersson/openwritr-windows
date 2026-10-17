@@ -3,13 +3,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Windows 11](https://img.shields.io/badge/Windows-11_24H2-0078D4?logo=windows)](https://github.com/trsdn/openwritr-windows)
 [![Rust](https://img.shields.io/badge/Rust-1.85-DEA584?logo=rust&logoColor=white)](https://www.rust-lang.org)
-[![Snapdragon X Elite](https://img.shields.io/badge/Snapdragon-X_Elite-3253DC?logo=qualcomm&logoColor=white)](https://www.qualcomm.com/products/mobile/snapdragon/pcs-and-tablets/snapdragon-x-elite)
+[![Snapdragon X Elite | X Plus](https://img.shields.io/badge/Snapdragon-X_Elite_|_X_Plus-3253DC?logo=qualcomm&logoColor=white)](https://www.qualcomm.com/laptops)
 [![Hexagon NPU](https://img.shields.io/badge/Hexagon-NPU-FF2A00?logo=qualcomm&logoColor=white)](https://huggingface.co/trsdn/parakeet-tdt-0.6b-v3-htp-int8-8s)
 [![Release](https://img.shields.io/github/v/release/trsdn/openwritr-windows)](https://github.com/trsdn/openwritr-windows/releases/latest)
 
 Push-to-talk voice-to-text for Windows. Local transcription uses **NVIDIA
 Parakeet TDT 0.6B v3** on CPU or Qualcomm Hexagon NPU, plus native
-**Whisper Large v3 Turbo** on the Snapdragon X Elite NPU.
+**Whisper Large v3 Turbo** on the Snapdragon X Elite / X Plus NPU.
 Optional LLM cleanup via **GitHub Copilot** (Claude Haiku 4.5, GPT-5 Mini,
 GPT-4.1) or any OpenAI-compatible endpoint.
 
@@ -270,7 +270,7 @@ the actual audio length within the window.
 The QNN backend loads several sibling DLLs by name at session-create time.
 `scripts/fetch_runtime.py` extracts the exact, hash-pinned set recorded in
 `runtime-manifest.json`. Alongside `onnxruntime_providers_qnn.dll`, the
-X Elite path requires `QnnHtp.dll`, `QnnHtpPrepare.dll`,
+Hexagon V73 NPU path requires `QnnHtp.dll`, `QnnHtpPrepare.dll`,
 `QnnHtpNetRunExtensions.dll`, `QnnSystem.dll`, the V73 stub and skeleton,
 and its catalog file. Without the SKEL + `.cat` pair, the stub fails
 `LoadLibrary` with `ERROR_MOD_NOT_FOUND` (126) and QnnHtp later aborts
