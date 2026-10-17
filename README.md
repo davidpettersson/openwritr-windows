@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Windows 11](https://img.shields.io/badge/Windows-11_24H2-0078D4?logo=windows)](https://github.com/trsdn/openwritr-windows)
 [![Rust](https://img.shields.io/badge/Rust-1.85-DEA584?logo=rust&logoColor=white)](https://www.rust-lang.org)
-[![Snapdragon X Elite | X Plus](https://img.shields.io/badge/Snapdragon-X_Elite_|_X_Plus-3253DC?logo=qualcomm&logoColor=white)](https://www.qualcomm.com/laptops)
+[![Snapdragon X Elite](https://img.shields.io/badge/Snapdragon-X_Elite-3253DC?logo=qualcomm&logoColor=white)](https://www.qualcomm.com/laptops/products/snapdragon-x-elite)
+[![Snapdragon X Plus](https://img.shields.io/badge/Snapdragon-X_Plus-3253DC?logo=qualcomm&logoColor=white)](https://www.qualcomm.com/laptops/products/snapdragon-x-plus)
 [![Hexagon NPU](https://img.shields.io/badge/Hexagon-NPU-FF2A00?logo=qualcomm&logoColor=white)](https://huggingface.co/trsdn/parakeet-tdt-0.6b-v3-htp-int8-8s)
 [![Release](https://img.shields.io/github/v/release/trsdn/openwritr-windows)](https://github.com/trsdn/openwritr-windows/releases/latest)
 
